@@ -10,6 +10,7 @@ justify-content-md-center{
     text-align: center;
     height: 45vh;
     align-items: center;   
+    background: white;
 }
 .left-part{
     width: 12%;

@@ -8,7 +8,7 @@ function Plaque() {
     const dep = useSelector(state => state.palqReducer.dep);
     const mat = useSelector(state => state.palqReducer.mat) || "";
     return (
-        <Container>
+        <Container style={{ marginTop: "50px" }}>
             <Row className="justify-content-md-center">
                 <div className="all-plaq">
                     <div className="left-part">
