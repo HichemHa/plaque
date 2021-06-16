@@ -1,13 +1,14 @@
-import { ADD_PAYS, ADD_MAT, ADD_DEP, CHANGE_COLOR_LATERAL, CHANGE_COLOR_MIDDLE,CHANGE_COLOR_TEXT  } from './../constants/actionTypes';
+import { ADD_PAYS, ADD_MAT, ADD_DEP, CHANGE_COLOR_LATERAL, CHANGE_COLOR_MIDDLE, CHANGE_COLOR_TEXT, CHOOSE_DEP } from './../constants/actionTypes';
 
 
 const initialState = {
     pays: null,
     mat: {},
     dep: null,
-    colorL:null,
-    colorM:null,
-    colorT:null,
+    colorL: null,
+    colorM: null,
+    colorT: null,
+    cDep: null
 
 }
 
@@ -42,6 +43,11 @@ const palqReducer = (state = initialState, { type, payload }) => {
             return {
                 ...state,
                 colorT: payload
+            }
+        case CHOOSE_DEP:
+            return {
+                ...state,
+                cDep: payload
             }
 
         default:

@@ -1,4 +1,4 @@
-import { ADD_PAYS, ADD_MAT, ADD_DEP, CHANGE_COLOR_LATERAL, CHANGE_COLOR_MIDDLE,CHANGE_COLOR_TEXT } from './../constants/actionTypes';
+import { ADD_PAYS, ADD_MAT, ADD_DEP, CHANGE_COLOR_LATERAL, CHANGE_COLOR_MIDDLE,CHANGE_COLOR_TEXT,CHOOSE_DEP } from './../constants/actionTypes';
 
 
 export const addPays = (payload) => {
@@ -29,5 +29,10 @@ export const changeCM = (payload) => {
 export const changeT = (payload) => {
     return {
         type: CHANGE_COLOR_TEXT, payload
+    }
+}
+export const choosedep = (payload) => {
+    return {
+        type: CHOOSE_DEP, payload
     }
 }
